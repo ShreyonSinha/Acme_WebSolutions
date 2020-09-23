@@ -1,0 +1,200 @@
+body{
+    margin: 0px;
+}
+header
+{
+    display: flex;
+    height: 509px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+h3
+{
+    font-family: 'Noto Serif', serif;
+    padding-top : 99px;
+    font-size: 3rem;
+}
+
+header::before
+{
+    content:" ";
+    height: 509px;
+    width: 100%;
+    position: absolute;
+    background: url(florian-olivo-4hbJ-eymZ1o-unsplash.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+button
+{
+    padding:15px;
+    border-radius: 12px;
+    border: 2px solid grey;
+    background-color: rgb( 121, 117, 121);
+    font-size: 16px;    
+    font-weight: 600;
+    transition:  0.8s;
+}
+.ReadMore:hover
+{
+    padding: 19px;
+    font-size: 20px ;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+.grid-container 
+{
+    display: grid;
+    grid-column-gap : 61px;
+    grid-template-areas: 'header header '
+    'body1 body2 ';
+    background-color:rgb(205,205,205);
+    font-size: 2.1rem;
+    font-weight: 100;
+    justify-content: center;
+    align-content: center;
+}
+.item1
+{
+    text-align: center;
+    grid-area: header;
+}
+.item2
+{
+    grid-area: body1;
+    text-align: center;
+    font-size: 22px;
+    padding-left: 82px;
+    padding-bottom: 30px;
+}
+.item3
+{
+    grid-area: body2;
+    text-align: center;
+    font-size: 22px;
+    padding-right: 87px;
+    padding-bottom: 30px;
+}
+
+.card-container
+{
+    height: 50vh;
+    width: 100%;
+    margin-top: -22px;
+    background-color: rgb( 60, 58, 60 );
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+/* ##########CARD-1################### */
+.card1
+{
+    display: grid;
+    grid-template-columns: 206px;
+    grid-template-rows: 144px 185px;
+    grid-template-areas: "image1" "text1";
+    background-color: whitesmoke;
+    border-radius: 19px;
+    text-align: center;
+    margin-right:30px ;
+}
+.card1_img
+{
+    grid-area: image1;
+    background-image: url(card1.jpg);
+    background-size: cover;
+    border-radius: 19px 19px 0px 0px;
+}
+.card1_text
+{
+    grid-area: text1;
+    
+}
+.card1_text h5{
+    font-weight: 800;
+    font-size: 1.3em;
+}
+.card1:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 8px rgba(0,0,0,0.6);
+    
+}
+/* #############CARD-2############ */
+.card2
+{
+    display: grid;
+    grid-template-columns: 206px;
+    grid-template-rows: 144px 185px;
+    grid-template-areas: "image2" "text2";
+    background-color: whitesmoke;
+    border-radius: 19px;
+    text-align: center;
+    margin-right:30px ;
+}
+.card2_img
+{
+    grid-area: image2;
+    background-image: url(card2.jpg);
+    background-size: cover;
+    border-radius: 19px 19px 0px 0px;
+}
+.card2_text
+{
+    grid-area: text2;
+    
+}
+.card2_text h5{
+    font-weight: 800;
+    font-size: 1.3em;
+}
+.card2:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 8px rgba(0,0,0,0.6);
+    
+}
+/* ##########Card-3############ */
+.card3
+{
+    display: grid;
+    grid-template-columns: 206px;
+    grid-template-rows: 144px 185px;
+    grid-template-areas: "image3" "text3";
+    background-color: whitesmoke;
+    border-radius: 19px;
+    text-align: center;
+    margin-right:30px ;
+   
+}
+.card3_img
+{
+    grid-area: image3;
+    background-image: url(card3.jpg);
+    background-size: cover;
+    border-radius: 19px 19px 0px 0px;
+}
+.card3_text
+{
+    grid-area: text3;
+    
+}
+.card3_text h5{
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.card3:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 8px rgba(0,0,0,0.6);
+    
+}
